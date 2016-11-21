@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161121195945) do
+ActiveRecord::Schema.define(version: 20161121200249) do
 
   create_table "doors", force: :cascade do |t|
     t.text     "text"
@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 20161121195945) do
     t.integer  "day"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean  "open"
   end
 
 end
