@@ -1,0 +1,17 @@
+= form_for @door do |f|
+  p Tag Nr.
+
+  = f.number_field :day, disabled: true
+
+  p Text
+
+  = f.text_area :text
+  
+  p Open?
+
+  = f.check_box :open
+  br
+  = f.submit
+end
+
+= image_tag @door.image.path 

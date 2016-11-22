@@ -6,6 +6,11 @@ namespace :build do
   end
 
   task doors: :environment do
-    p 'Bar'
+    Door.delete_all
+    counter = 1
+    Image.all.sample(24).each do |image|
+      image.build_door(day: counter).save
+      counter += 1
+    end
   end
 end

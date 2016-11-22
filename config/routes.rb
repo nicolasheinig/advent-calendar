@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  resources :doors, only: %i(index show)
+  resources :doors, only: %i(index show edit update)
 
   root 'doors#index'
 
