@@ -10,15 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161121200249) do
+ActiveRecord::Schema.define(version: 20161121203341) do
 
   create_table "doors", force: :cascade do |t|
     t.text     "text"
-    t.string   "image_link"
     t.integer  "day"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.boolean  "open"
+    t.integer  "image_id"
+  end
+
+  create_table "images", force: :cascade do |t|
+    t.string   "path"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
