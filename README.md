@@ -1,24 +1,16 @@
-# README
+# advent-calender
+count the days till christmas!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Installation
+1. Get the app
 
-Things you may want to cover:
+        git clone https://github.com/nicolas-heinig/advent-calendar.git
 
-* Ruby version
+2. Select images that should hide behind your 'doors' and save them here as *.png*:
 
-* System dependencies
+        app/assets/private/
 
-* Configuration
+3. Build your Images and doors!
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+        rake build:images
+        rake buikd:doors
