@@ -20,6 +20,6 @@
 # Ignore Byebug command history file.
 .byebug_history
 
-# Ignore the pictures in the images folder
+# Ignore everything in the images/private folder
 
-/app/assets/images/*.png
+app/assets/images/private/*
