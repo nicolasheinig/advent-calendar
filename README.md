@@ -13,4 +13,4 @@ count the days till christmas!
 3. Build your Images and doors!
 
         rake build:images
-        rake buikd:doors
+        rake build:doors
