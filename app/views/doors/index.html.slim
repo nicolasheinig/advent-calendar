@@ -1,2 +1,4 @@
-h1 Doors#index
-p Find me in app/views/doors/index.html.erb
+img src="assets/wallpaper"
+
+- @doors.each do |door|
+  = render 'door', door: door, position: [rand(1..1700), rand(1..660)]
