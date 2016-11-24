@@ -1,4 +1,4 @@
-img src="assets/wallpaper"
+= image_tag 'wallpaper', width: '100%', height: '100%'
 
 - @doors.each do |door|
-  = render 'door', door: door, position: [rand(1..1700), rand(1..660)]
+  = render 'door', door: door, position: [rand(10..650), rand(10..1200)]

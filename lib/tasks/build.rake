@@ -1,5 +1,6 @@
 namespace :build do
   task images: :environment do
+    Image.delete_all
     Dir.new('app/assets/images/private').each do |f|
       Image.create(path: "private/#{File.path(f)}") if File.extname(f) == '.png'
     end
