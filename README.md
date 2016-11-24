@@ -1,6 +1,11 @@
 # advent-calender
 count the days till christmas!
 
+## Requirements
+
+* A running version of *Ruby*
+* A running version of *Ruby on Rails*
+
 ## Installation
 1. Get the app
 
