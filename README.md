@@ -10,8 +10,12 @@ count the days till christmas!
 1. Get the app
 
         git clone https://github.com/nicolas-heinig/advent-calendar.git
+        
+2. Install gems
 
-2. Select images that should hide behind your 'doors' and save them here as *.png*:
+        bundle
+
+3. Select images that should hide behind your 'doors' and save them here as *.png*:
 
         app/assets/private/
 
