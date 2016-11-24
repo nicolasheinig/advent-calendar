@@ -1,2 +1,5 @@
-h1 Doors#show
-p Find me in app/views/doors/show.html.erb
+.jumbotron.content
+  h1 = "#{@door.day}. Dezember #{Time.now.year}"
+
+  .image
+    = image_tag @door.image.path, size: '600x400'
