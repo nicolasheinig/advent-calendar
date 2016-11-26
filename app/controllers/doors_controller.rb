@@ -1,4 +1,11 @@
 class DoorsController < ApplicationController
+  http_basic_authenticate_with name: Settings.accounts.admin.username, 
+                               password: Settings.accounts.admin.password,
+                               only: [:edit, :update, :overview]
+
+  http_basic_authenticate_with name: Settings.accounts.user.username, 
+                               password: Settings.accounts.user.password,
+                               only: [:index, :show]
   def index
     @doors = Door.all
   end

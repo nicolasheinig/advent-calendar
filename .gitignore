@@ -23,3 +23,6 @@
 # Ignore everything in the images/private folder
 
 app/assets/images/private/*
+config/settings.local.yml
+config/settings/*.local.yml
+config/environments/*.local.yml
