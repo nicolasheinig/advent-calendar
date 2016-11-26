@@ -15,11 +15,15 @@ count the days till christmas!
 
         bundle
 
-3. Select images that should hide behind your 'doors' and save them here as *.png*:
+3. Set user credentials in 
+
+        config/settings.yml
+
+4. Select images that should hide behind your 'doors' and save them here as *.png*:
 
         app/assets/private/
 
-3. Build your Images and doors!
+5. Build your Images and doors!
 
         rake build:images
         rake build:doors
