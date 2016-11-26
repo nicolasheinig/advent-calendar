@@ -4,7 +4,7 @@ class DoorsController < ApplicationController
   end
 
   def edit
-    @door = Door.find(params[:id])
+    @door = Door.find_by_day(params[:id])
   end
 
   def update
@@ -13,7 +13,11 @@ class DoorsController < ApplicationController
   end
 
   def show
-    @door = Door.find(params[:id])
+    @door = Door.find_by_day(params[:id])
+  end
+
+  def overview
+    @doors = Door.all
   end
 
   private

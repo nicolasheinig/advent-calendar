@@ -1,0 +1,13 @@
+table
+  tr
+    td TAG
+    td TEXT
+    td Offen?
+    td
+
+  - @doors.each do |door|
+    tr
+      td = door.day
+      td = truncate door.text, length: 10
+      td = door.open
+      td = link_to 'EDIT', edit_door_path(door.day)

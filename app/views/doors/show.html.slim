@@ -1,5 +1,11 @@
 .jumbotron.content
   h1 = "#{@door.day}. Dezember #{Time.now.year}"
 
-  .image
-    = image_tag @door.image.path, size: '600x400'
+  .container
+    .row
+      .col-md-8
+        = image_tag @door.image.path, height: '100%', width: '100%'
+      .col-md-4
+        = @door.text
+
+  = link_to 'Zurück', doors_path, class: 'btn btn-default btn-small'
