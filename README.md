@@ -11,9 +11,10 @@ count the days till christmas!
 
         git clone https://github.com/nicolas-heinig/advent-calendar.git
         
-2. Install gems
+2. Install gems + setup database
 
         bundle
+	rake db:migrate
 
 3. Set user credentials in 
 
