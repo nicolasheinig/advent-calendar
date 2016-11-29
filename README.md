@@ -14,7 +14,8 @@ count the days till christmas!
 2. Install gems + setup database
 
         bundle
-	rake db:migrate
+	
+		rake db:migrate
 
 3. Set user credentials in 
 
