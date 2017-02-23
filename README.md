@@ -29,3 +29,5 @@ count the days till christmas!
 
         rake build:images
         rake build:doors
+
+6. Send the link to the app to your family and friends :)
